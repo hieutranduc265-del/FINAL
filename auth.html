@@ -1,302 +1,431 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <title>Đăng nhập & Đăng ký - HGT STORE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<header class="header">
-    <div class="logo">HGT STORE</div>
-    <nav class="menu">
-        <a href="index.html">TRANG CHỦ</a>
-        <div class="dropdown">
-            <a href="khuyenmai.html">KHUYẾN MÃI</a>
-            <div class="dropdown-menu">
-                <a href="donggia195.html">Đồng giá 195K</a>
-                <a href="mua1tang1.html">Mua 1 tặng 1</a>
-                <a href="dealtrainghiem.html">Deal trải nghiệm</a>
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+    </div>
+
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">HGT STORE</a>
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html" class="active">TRANG CHỦ</a>
+
+            <div class="dropdown">
+
+                <a href="khuyenmai.html">KHUYẾN MÃI</a>
+
+                <div class="dropdown-menu">
+
+                    <a href="donggia195.html">Đồng giá 195K</a>
+                    <a href="mua1tang1.html">Mua 1 tặng 1</a>
+                    <a href="dealtrainghiem.html">Deal trải nghiệm</a>
+
+                </div>
+
             </div>
+
+
+
+
+
+
+            <div class="dropdown">
+                <a href="Collection.htm">COLLECTION</a>
+                <div class="dropdown-menu">
+                    <a href="#">Summer Collection</a>
+                    <a href="#">Tết Collection</a>
+                    <a href="#">Travellers Selection</a>
+                    <a href="#">Coming Soon</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="dropdown">
+                <a href="#">ÁO</a>
+                <div class="dropdown-menu">
+                    <a href="#">Mục 1</a>
+                    <a href="#">Mục 2</a>
+                    <a href="#">Mục 3</a>
+                    <a href="#">Mục 4</a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="dropdown">
+                <a href="#">QUẦN</a>
+                <div class="dropdown-menu">
+                    <a href="#">Mục 1</a>
+                    <a href="#">Mục 2</a>
+                    <a href="#">Mục 3</a>
+                    <a href="#">Mục 4</a>
+                    <a href="#">Mục 5</a>
+                    <a href="#">Mục 6</a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="dropdown">
+                <a href="#">PHỤ KIỆN</a>
+                <div class="dropdown-menu">
+                    <a href="#">Mục 1</a>
+                    <a href="#">Mục 2</a>
+                    <a href="#">Mục 3</a>
+                    <a href="#">Mục 4</a>
+                    <a href="#">Mục 5</a>
+                    <a href="#">Mục 6</a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <a href="New.html">NEW</a>
+            <a href="about.html">ABOUT</a>
+
+        </nav>
+
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="auth.html" style="color: inherit;"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        <a href="#">COLLECTION</a>
-        <a href="#">ÁO</a>
-        <a href="#">QUẦN</a>
-        <a href="#">NEW</a>
-    </nav>
-    <div class="icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-    </div>
-</header>
 
-<section class="auth-container">
-    <div class="auth-box">
-        <div class="auth-tabs">
-            <button class="tab-btn active" onclick="switchTab('login')">ĐĂNG NHẬP</button>
-            <button class="tab-btn" onclick="switchTab('register')">ĐĂNG KÝ</button>
+    </header>
+
+    <section class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="switchTab('login')">ĐĂNG NHẬP</button>
+                <button class="tab-btn" onclick="switchTab('register')">ĐĂNG KÝ</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <div class="input-group">
+                    <label>Email hoặc số điện thoại *</label>
+                    <input type="text" id="login-input" placeholder="Nhập Email hoặc SĐT" required>
+                    <span id="login-error" style="color: red; font-size: 13px; display: none; margin-top: 5px;"></span>
+                </div>
+                <div class="input-group password-group">
+                    <label>Mật khẩu *</label>
+                    <input type="password" id="login-password" placeholder="Nhập mật khẩu" required>
+                    <i class="fa-solid fa-eye-slash" id="toggle-login-password"></i>
+                </div>
+                <div class="auth-action">
+                    <a href="#" class="forgot-pass" id="show-forgot-form">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="auth-submit-btn">ĐĂNG NHẬP</button>
+
+                <div class="auth-divider">
+                    <span>Hoặc đăng nhập bằng</span>
+                </div>
+
+                <button type="button" class="social-btn google-btn" onclick="loginWithGoogle()">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
+            </form>
+            <form id="register-form" class="auth-form">
+                <div class="input-group">
+                    <label>Họ tên *</label>
+                    <input type="text" id="register-name" placeholder="Nhập họ tên" required>
+                    <span id="error-register-name"
+                        style="color: red; font-size: 13px; display: none; margin-top: 5px;">Họ tên chỉ được chứa chữ
+                        cái.</span>
+                </div>
+
+                <div class="input-group">
+                    <label>Số điện thoại *</label>
+                    <input type="tel" id="register-phone" placeholder="Nhập số điện thoại" required>
+                    <span id="error-register-phone"
+                        style="color: red; font-size: 13px; display: none; margin-top: 5px;">Số điện thoại chỉ được chứa
+                        các con số.</span>
+                </div>
+
+                <div class="input-group">
+                    <label>Email *</label>
+                    <input type="email" id="register-email" placeholder="Nhập email" required>
+                    <span id="error-register-email"
+                        style="color: red; font-size: 13px; display: none; margin-top: 5px;">Email phải có đuôi
+                        @gmail.com.</span>
+                </div>
+
+                <div class="input-group password-group">
+                    <label>Mật khẩu *</label>
+                    <input type="password" id="register-password" placeholder="Mật khẩu từ 6-32 ký tự" required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">ĐĂNG KÝ</button>
+            </form>
+            <form id="forgot-form" class="auth-form">
+                <h3 style="text-align: center; margin-bottom: 15px; font-size: 22px;">Phục Hồi Mật Khẩu</h3>
+                <p style="text-align: center; color: #666; font-size: 14px; margin-bottom: 25px;">
+                    Vui lòng nhập email hoặc số điện thoại của bạn. Chúng tôi sẽ gửi hướng dẫn đặt lại mật khẩu.
+                </p>
+
+                <div class="input-group">
+                    <label>Email hoặc số điện thoại *</label>
+                    <input type="text" id="forgot-input" placeholder="Nhập Email hoặc SĐT" required>
+                    <span id="forgot-error" style="color: red; font-size: 13px; display: none; margin-top: 5px;"></span>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">GỬI YÊU CẦU</button>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="back-to-login"
+                        style="font-size: 14px; color: #111; text-decoration: none; font-weight: 600; transition: 0.3s;">
+                        <i class="fa-solid fa-arrow-left" style="margin-right: 5px;"></i> Quay lại đăng nhập
+                    </a>
+                </div>
+            </form>
         </div>
+    </section>
 
-      <form id="login-form" class="auth-form active">
-    <div class="input-group">
-        <label>Email hoặc số điện thoại *</label>
-        <input type="text" id="login-input" placeholder="Nhập Email hoặc SĐT" required>
-        <span id="login-error" style="color: red; font-size: 13px; display: none; margin-top: 5px;"></span>
-    </div>
-    <div class="input-group password-group">
-        <label>Mật khẩu *</label>
-        <input type="password" id="login-password" placeholder="Nhập mật khẩu" required>
-        <i class="fa-solid fa-eye-slash" id="toggle-login-password"></i>
-    </div>
-    <div class="auth-action">
-        <a href="#" class="forgot-pass" id="show-forgot-form">Quên mật khẩu?</a>
-    </div>
-    <button type="submit" class="auth-submit-btn">ĐĂNG NHẬP</button>
-
-    <div class="auth-divider">
-        <span>Hoặc đăng nhập bằng</span>
-    </div>
-    
-    <button type="button" class="social-btn google-btn" onclick="loginWithGoogle()">
-        <i class="fa-brands fa-google"></i> Google
-    </button>
-</form>
-    <form id="register-form" class="auth-form">
-    <div class="input-group">
-        <label>Họ tên *</label>
-        <input type="text" id="register-name" placeholder="Nhập họ tên" required>
-        <span id="error-register-name" style="color: red; font-size: 13px; display: none; margin-top: 5px;">Họ tên chỉ được chứa chữ cái.</span>
-    </div>
-    
-    <div class="input-group">
-        <label>Số điện thoại *</label>
-        <input type="tel" id="register-phone" placeholder="Nhập số điện thoại" required>
-        <span id="error-register-phone" style="color: red; font-size: 13px; display: none; margin-top: 5px;">Số điện thoại chỉ được chứa các con số.</span>
-    </div>
-    
-    <div class="input-group">
-        <label>Email *</label>
-        <input type="email" id="register-email" placeholder="Nhập email" required>
-        <span id="error-register-email" style="color: red; font-size: 13px; display: none; margin-top: 5px;">Email phải có đuôi @gmail.com.</span>
-    </div>
-    
-    <div class="input-group password-group">
-        <label>Mật khẩu *</label>
-        <input type="password" id="register-password" placeholder="Mật khẩu từ 6-32 ký tự" required>
-    </div>
-    
-    <button type="submit" class="auth-submit-btn">ĐĂNG KÝ</button>
-</form>
-        <form id="forgot-form" class="auth-form">
-    <h3 style="text-align: center; margin-bottom: 15px; font-size: 22px;">Phục Hồi Mật Khẩu</h3>
-    <p style="text-align: center; color: #666; font-size: 14px; margin-bottom: 25px;">
-        Vui lòng nhập email hoặc số điện thoại của bạn. Chúng tôi sẽ gửi hướng dẫn đặt lại mật khẩu.
-    </p>
-    
-    <div class="input-group">
-        <label>Email hoặc số điện thoại *</label>
-        <input type="text" id="forgot-input" placeholder="Nhập Email hoặc SĐT" required>
-        <span id="forgot-error" style="color: red; font-size: 13px; display: none; margin-top: 5px;"></span>
-    </div>
-    
-    <button type="submit" class="auth-submit-btn">GỬI YÊU CẦU</button>
-    
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="#" id="back-to-login" style="font-size: 14px; color: #111; text-decoration: none; font-weight: 600; transition: 0.3s;">
-            <i class="fa-solid fa-arrow-left" style="margin-right: 5px;"></i> Quay lại đăng nhập
-        </a>
-    </div>
-</form>
-    </div>
-</section>
-
-<footer class="footer">
+    <footer class="footer">
     </footer>
 
-<script>
-    function switchTab(type) {
-        const tabs = document.querySelectorAll('.tab-btn');
-        const forms = document.querySelectorAll('.auth-form');
+    <script>
+        function switchTab(type) {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const forms = document.querySelectorAll('.auth-form');
 
-        tabs.forEach(tab => tab.classList.remove('active'));
-        forms.forEach(form => form.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active'));
+            forms.forEach(form => form.classList.remove('active'));
 
-        if (type === 'login') {
-            tabs[0].classList.add('active');
-            document.getElementById('login-form').classList.add('active');
-        } else {
-            tabs[1].classList.add('active');
-            document.getElementById('register-form').classList.add('active');
+            if (type === 'login') {
+                tabs[0].classList.add('active');
+                document.getElementById('login-form').classList.add('active');
+            } else {
+                tabs[1].classList.add('active');
+                document.getElementById('register-form').classList.add('active');
+            }
         }
-    }
-    // bắt sự kiện khi người dùng bấm nút Submit (ĐĂNG NHẬP)
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    // ngăn chặn form tự động chuyển trang khi chưa kiểm tra xong
-    event.preventDefault(); 
+        // bắt sự kiện khi người dùng bấm nút Submit (ĐĂNG NHẬP)
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            // ngăn chặn form tự động chuyển trang khi chưa kiểm tra xong
+            event.preventDefault();
 
-    // lấy giá trị người dùng nhập vào và xóa khoảng trắng ở 2 đầu
-    const inputVal = document.getElementById('login-input').value.trim();
-    const errorMsg = document.getElementById('login-error');
+            // lấy giá trị người dùng nhập vào và xóa khoảng trắng ở 2 đầu
+            const inputVal = document.getElementById('login-input').value.trim();
+            const errorMsg = document.getElementById('login-error');
 
-    // điều kiện kiểm tra Số điện thoại: Chỉ chứa các chữ số từ 0-9
-    const isPhone = /^[0-9]+$/.test(inputVal);
+            // điều kiện kiểm tra Số điện thoại: Chỉ chứa các chữ số từ 0-9
+            const isPhone = /^[0-9]+$/.test(inputVal);
 
-    // điều kiện kiểm tra email kết thúc bằng @gmail.com
-    const isGmail = inputVal.endsWith('@gmail.com');
+            // điều kiện kiểm tra email kết thúc bằng @gmail.com
+            const isGmail = inputVal.endsWith('@gmail.com');
 
-    // logic xử lý
-    if (isPhone || isGmail) {
-        // nếu đúng 1 trong 2 điều kiện -> ẩn lỗi và cho phép submit
-        errorMsg.style.display = 'none';
-        
-        // hiện thông báo
-        alert('Nhập đúng định dạng! Đang xử lý đăng nhập...');
-        
-        // khi muốn form thực sự gửi dữ liệu đi, bạn mở comment dòng dưới:
-    } else {
-        // nếu sai cả 2 hiện thông báo lỗi
-        errorMsg.textContent = 'Vui lòng nhập đúng số điện thoại (chỉ chứa số) hoặc email phải có đuôi @gmail.com';
-        errorMsg.style.display = 'block';
-    }
-});
+            // logic xử lý
+            if (isPhone || isGmail) {
+                // nếu đúng 1 trong 2 điều kiện -> ẩn lỗi và cho phép submit
+                errorMsg.style.display = 'none';
 
-// =====================================
-// ẨN / HIỆN MẬT KHẨU ĐĂNG NHẬP
-// =====================================
-const togglePassword = document.getElementById('toggle-login-password');
-const passwordInput = document.getElementById('login-password');
+                // hiện thông báo
+                alert('Nhập đúng định dạng! Đang xử lý đăng nhập...');
 
-togglePassword.addEventListener('click', function () {
-    //nếu đang là 'password' (dấu sao) thì đổi thành 'text' và ngược lại
-    const currentType = passwordInput.getAttribute('type');
-    const newType = currentType === 'password' ? 'text' : 'password';
-    passwordInput.setAttribute('type', newType);
-    
-    //đổi hình ảnh icon giữa mắt mở (fa-eye) và mắt nhắm (fa-eye-slash)
-    this.classList.toggle('fa-eye');
-    this.classList.toggle('fa-eye-slash');
-});
+                // khi muốn form thực sự gửi dữ liệu đi, bạn mở comment dòng dưới:
+            } else {
+                // nếu sai cả 2 hiện thông báo lỗi
+                errorMsg.textContent = 'Vui lòng nhập đúng số điện thoại (chỉ chứa số) hoặc email phải có đuôi @gmail.com';
+                errorMsg.style.display = 'block';
+            }
+        });
 
-// =====================================
-// XỬ LÝ CHUYỂN FORM QUÊN MẬT KHẨU
-// =====================================
-const showForgotBtn = document.getElementById('show-forgot-form');
-const backToLoginBtn = document.getElementById('back-to-login');
-const authTabs = document.querySelector('.auth-tabs'); // Cái khung chứa 2 chữ ĐĂNG NHẬP / ĐĂNG KÝ
-const loginFormObj = document.getElementById('login-form');
-const forgotForm = document.getElementById('forgot-form');
+        // =====================================
+        // ẨN / HIỆN MẬT KHẨU ĐĂNG NHẬP
+        // =====================================
+        const togglePassword = document.getElementById('toggle-login-password');
+        const passwordInput = document.getElementById('login-password');
 
-// bấm "Quên mật khẩu?"
-showForgotBtn.addEventListener('click', function(e) {
-    e.preventDefault(); // chặn load lại trang
-    
-    // ẩn thanh tab
-    authTabs.style.display = 'none'; 
-    
-    // ẩn form đăng nhập, hiện form quên mật khẩu
-    loginFormObj.classList.remove('active');
-    forgotForm.classList.add('active');
-});
+        togglePassword.addEventListener('click', function () {
+            //nếu đang là 'password' (dấu sao) thì đổi thành 'text' và ngược lại
+            const currentType = passwordInput.getAttribute('type');
+            const newType = currentType === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', newType);
 
-// bấm "Quay lại đăng nhập"
-backToLoginBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // hiện lại thanh tab
-    authTabs.style.display = 'flex'; 
-    
-    // ẩn form quên mật khẩu, hiện form đăng nhập
-    forgotForm.classList.remove('active');
-    loginFormObj.classList.add('active');
-});
+            //đổi hình ảnh icon giữa mắt mở (fa-eye) và mắt nhắm (fa-eye-slash)
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
 
-// =====================================
-// KIỂM TRA ĐIỀU KIỆN FORM QUÊN MẬT KHẨU
-// =====================================
-document.getElementById('forgot-form').addEventListener('submit', function(event) {
-    // chặn tự động load trang
-    event.preventDefault(); 
+        // =====================================
+        // XỬ LÝ CHUYỂN FORM QUÊN MẬT KHẨU
+        // =====================================
+        const showForgotBtn = document.getElementById('show-forgot-form');
+        const backToLoginBtn = document.getElementById('back-to-login');
+        const authTabs = document.querySelector('.auth-tabs'); // Cái khung chứa 2 chữ ĐĂNG NHẬP / ĐĂNG KÝ
+        const loginFormObj = document.getElementById('login-form');
+        const forgotForm = document.getElementById('forgot-form');
 
-    // lấy giá trị input và thẻ báo lỗi
-    const inputVal = document.getElementById('forgot-input').value.trim();
-    const errorMsg = document.getElementById('forgot-error');
+        // bấm "Quên mật khẩu?"
+        showForgotBtn.addEventListener('click', function (e) {
+            e.preventDefault(); // chặn load lại trang
 
-    // điều kiện kiểm tra
-    const isPhone = /^[0-9]+$/.test(inputVal);
-    const isGmail = inputVal.endsWith('@gmail.com');
+            // ẩn thanh tab
+            authTabs.style.display = 'none';
 
-    // xử lý logic
-    if (isPhone || isGmail) {
-        // nếu đúng định dạng
-        errorMsg.style.display = 'none';
-        alert('Yêu cầu khôi phục đã được gửi. Vui lòng kiểm tra email hoặc tin nhắn của bạn!');
-        
-    } else {
-        // nếu sai định dạng
-        errorMsg.textContent = 'Vui lòng nhập đúng số điện thoại (chỉ chứa số) hoặc email phải có đuôi @gmail.com';
-        errorMsg.style.display = 'block';
-    }
-});
+            // ẩn form đăng nhập, hiện form quên mật khẩu
+            loginFormObj.classList.remove('active');
+            forgotForm.classList.add('active');
+        });
 
-// =====================================
-// KIỂM TRA ĐIỀU KIỆN FORM ĐĂNG KÝ
-// =====================================
-document.getElementById('register-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Chặn hành vi load lại trang
+        // bấm "Quay lại đăng nhập"
+        backToLoginBtn.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    // lấy giá trị người dùng nhập vào
-    const nameVal = document.getElementById('register-name').value.trim();
-    const phoneVal = document.getElementById('register-phone').value.trim();
-    const emailVal = document.getElementById('register-email').value.trim();
+            // hiện lại thanh tab
+            authTabs.style.display = 'flex';
 
-    // lấy các thẻ span để hiển thị lỗi
-    const errorName = document.getElementById('error-register-name');
-    const errorPhone = document.getElementById('error-register-phone');
-    const errorEmail = document.getElementById('error-register-email');
+            // ẩn form quên mật khẩu, hiện form đăng nhập
+            forgotForm.classList.remove('active');
+            loginFormObj.classList.add('active');
+        });
 
-    let isValid = true; // Biến cờ để theo dõi xem form có hợp lệ toàn bộ không
+        // =====================================
+        // KIỂM TRA ĐIỀU KIỆN FORM QUÊN MẬT KHẨU
+        // =====================================
+        document.getElementById('forgot-form').addEventListener('submit', function (event) {
+            // chặn tự động load trang
+            event.preventDefault();
 
-    // kiểm tra họ tên (Chỉ chứa chữ cái và khoảng trắng, bao gồm cả tiếng Việt có dấu)
-    const nameRegex = /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$/;
-    if (!nameRegex.test(nameVal)) {
-        errorName.style.display = 'block'; // Hiện lỗi
-        isValid = false;
-    } else {
-        errorName.style.display = 'none';  // Ẩn lỗi nếu đúng
-    }
+            // lấy giá trị input và thẻ báo lỗi
+            const inputVal = document.getElementById('forgot-input').value.trim();
+            const errorMsg = document.getElementById('forgot-error');
 
-    // kiểm tra Số điện thoại (Chỉ chứa số)
-    const phoneRegex = /^[0-9]+$/;
-    if (!phoneRegex.test(phoneVal)) {
-        errorPhone.style.display = 'block';
-        isValid = false;
-    } else {
-        errorPhone.style.display = 'none';
-    }
+            // điều kiện kiểm tra
+            const isPhone = /^[0-9]+$/.test(inputVal);
+            const isGmail = inputVal.endsWith('@gmail.com');
 
-    // kiểm tra Email (Phải có @gmail.com)
-    if (!emailVal.endsWith('@gmail.com')) {
-        errorEmail.style.display = 'block';
-        isValid = false;
-    } else {
-        errorEmail.style.display = 'none';
-    }
+            // xử lý logic
+            if (isPhone || isGmail) {
+                // nếu đúng định dạng
+                errorMsg.style.display = 'none';
+                alert('Yêu cầu khôi phục đã được gửi. Vui lòng kiểm tra email hoặc tin nhắn của bạn!');
 
-    // nếu tất cả các trường đều nhập đúng (isValid vẫn là true)
-    if (isValid) {
-        alert('Đăng ký tài khoản thành công!');
-        // Khi muốn code thực sự gửi dữ liệu đi, bạn mở comment dòng dưới:
-        // this.submit();
-    }
-});
+            } else {
+                // nếu sai định dạng
+                errorMsg.textContent = 'Vui lòng nhập đúng số điện thoại (chỉ chứa số) hoặc email phải có đuôi @gmail.com';
+                errorMsg.style.display = 'block';
+            }
+        });
 
-function loginWithGoogle() {
-    alert("Tính năng Đăng nhập bằng Google đang kết nối với API...");
-}
-</script>
+        // =====================================
+        // KIỂM TRA ĐIỀU KIỆN FORM ĐĂNG KÝ
+        // =====================================
+        document.getElementById('register-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Chặn hành vi load lại trang
+
+            // lấy giá trị người dùng nhập vào
+            const nameVal = document.getElementById('register-name').value.trim();
+            const phoneVal = document.getElementById('register-phone').value.trim();
+            const emailVal = document.getElementById('register-email').value.trim();
+
+            // lấy các thẻ span để hiển thị lỗi
+            const errorName = document.getElementById('error-register-name');
+            const errorPhone = document.getElementById('error-register-phone');
+            const errorEmail = document.getElementById('error-register-email');
+
+            let isValid = true; // Biến cờ để theo dõi xem form có hợp lệ toàn bộ không
+
+            // kiểm tra họ tên (Chỉ chứa chữ cái và khoảng trắng, bao gồm cả tiếng Việt có dấu)
+            const nameRegex = /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$/;
+            if (!nameRegex.test(nameVal)) {
+                errorName.style.display = 'block'; // Hiện lỗi
+                isValid = false;
+            } else {
+                errorName.style.display = 'none';  // Ẩn lỗi nếu đúng
+            }
+
+            // kiểm tra Số điện thoại (Chỉ chứa số)
+            const phoneRegex = /^[0-9]+$/;
+            if (!phoneRegex.test(phoneVal)) {
+                errorPhone.style.display = 'block';
+                isValid = false;
+            } else {
+                errorPhone.style.display = 'none';
+            }
+
+            // kiểm tra Email (Phải có @gmail.com)
+            if (!emailVal.endsWith('@gmail.com')) {
+                errorEmail.style.display = 'block';
+                isValid = false;
+            } else {
+                errorEmail.style.display = 'none';
+            }
+
+            // nếu tất cả các trường đều nhập đúng (isValid vẫn là true)
+            if (isValid) {
+                alert('Đăng ký tài khoản thành công!');
+                // Khi muốn code thực sự gửi dữ liệu đi, bạn mở comment dòng dưới:
+                // this.submit();
+            }
+        });
+
+        function loginWithGoogle() {
+            alert("Tính năng Đăng nhập bằng Google đang kết nối với API...");
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="vibrate-contact-btn">
+        <a href="tel:0936611611" title="Gọi ngay cho HGT Store">
+            <div class="icon-box">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <span>Liên hệ</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
 
 </body>
-</html>
 
+</html>
