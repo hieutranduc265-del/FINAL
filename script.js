@@ -141,3 +141,82 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOrder = document.querySelector('.btn-submit-order');
+
+    if (btnOrder) {
+        btnOrder.addEventListener('click', function (e) {
+            let isValid = true;
+
+            // Hàm kiểm tra chung
+            function validate(id, errorId, message) {
+                const input = document.getElementById(id);
+                const error = document.getElementById(errorId);
+                if (input.value.trim() === "") {
+                    error.innerText = message;
+                    input.classList.add('input-error');
+                    isValid = false;
+                } else {
+                    error.innerText = "";
+                    input.classList.remove('input-error');
+                }
+            }
+
+            // Thực hiện kiểm tra
+            validate('fullname', 'error-fullname', 'Vui lòng nhập họ và tên');
+            
+            // Kiểm tra số điện thoại (phải là số và đủ 10 số)
+            const phoneInput = document.getElementById('phone');
+            const phoneError = document.getElementById('error-phone');
+            const phoneRegex = /^[0-9]{10}$/;
+            if (!phoneRegex.test(phoneInput.value.trim())) {
+                phoneError.innerText = "Số điện thoại không hợp lệ (10 chữ số)";
+                phoneInput.classList.add('input-error');
+                isValid = false;
+            } else {
+                phoneError.innerText = "";
+                phoneInput.classList.remove('input-error');
+            }
+
+            validate('address', 'error-address', 'Vui lòng nhập địa chỉ cụ thể');
+            validate('city', 'error-city', 'Vui lòng chọn Tỉnh/Thành phố');
+
+            if (!isValid) {
+                e.preventDefault(); // Ngừng chuyển trang nếu có lỗi
+                // Cuộn lên ô lỗi đầu tiên
+                document.querySelector('.input-error').focus();
+            } else {
+                alert("Đơn hàng đã được đặt thành công!");
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

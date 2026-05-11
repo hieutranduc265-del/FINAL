@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
     <div class="logo-top-box">
@@ -18,7 +16,6 @@
     </div>
 
     <div class="thanhtoan-container">
-
         <div class="tt-left">
             <div class="account-section">
                 <div class="acc-info">
@@ -34,13 +31,32 @@
 
             <div class="section-box">
                 <h2 class="section-title">Thông tin giao hàng</h2>
-                <input type="text" value="" placeholder="Họ và tên" class="tt-input">
-                <input type="tel" placeholder="Nhập số điện thoại" class="tt-input">
-                <select class="tt-input">
-                    <option>Việt Nam</option>
-                </select>
-                <input type="text" placeholder="Địa chỉ, tên đường" class="tt-input">
-                <input type="text" placeholder="Tỉnh/TP, Quận/Huyện, Phường/Xã" class="tt-input">
+                
+                <div class="input-field-group">
+                    <input type="text" id="fullname" placeholder="Họ và tên" class="tt-input">
+                    <span class="error-text" id="error-fullname"></span>
+                </div>
+
+                <div class="input-field-group">
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" class="tt-input">
+                    <span class="error-text" id="error-phone"></span>
+                </div>
+
+                <div class="input-field-group">
+                    <select class="tt-input" id="country">
+                        <option value="VN">Việt Nam</option>
+                    </select>
+                </div>
+
+                <div class="input-field-group">
+                    <input type="text" id="address" placeholder="Địa chỉ, tên đường" class="tt-input">
+                    <span class="error-text" id="error-address"></span>
+                </div>
+
+                <div class="input-field-group">
+                    <input type="text" id="city" placeholder="Tỉnh/TP, Quận/Huyện, Phường/Xã" class="tt-input">
+                    <span class="error-text" id="error-city"></span>
+                </div>
             </div>
 
             <div class="section-box">
@@ -61,7 +77,7 @@
                     <label class="payment-item">
                         <input type="radio" name="pay">
                         <div class="pay-icon-box"><i class="fa-solid fa-qrcode"></i></div>
-                        <span>Chuyển khoản qua QR -BANK</span>
+                        <span>Chuyển khoản qua QR - BANK</span>
                     </label>
                 </div>
             </div>
@@ -81,8 +97,7 @@
                     </div>
                     <div class="item-info-tt">
                         <div class="item-header-row">
-                            <p class="item-name">Áo Polo Nam - COLOR BLOCK LINE POLO - SEAFOAM - 88540 - Xanh Vỏ Đậu -
-                                Big size upto 5XL</p>
+                            <p class="item-name">Áo Polo Nam - COLOR BLOCK LINE POLO - SEAFOAM - 88540 - Xanh Vỏ Đậu - Big size upto 5XL</p>
                             <i class="fa-regular fa-trash-can btn-delete"></i>
                         </div>
                         <div class="variant-tag">SEAFOAM / M <i class="fa-solid fa-chevron-right"></i></div>
@@ -97,8 +112,7 @@
                                 <button>+</button>
                             </div>
                         </div>
-                        <p class="discount-small">Bạn đã được giảm <span>180,000đ</span> <i
-                                class="fa-solid fa-chevron-down"></i></p>
+                        <p class="discount-small">Bạn đã được giảm <span>180,000đ</span> <i class="fa-solid fa-chevron-down"></i></p>
                     </div>
                 </div>
 
@@ -124,8 +138,7 @@
                             <span class="slider-round"></span>
                         </label>
                     </div>
-                    <p class="reward-subtext">Bạn không có điểm thưởng hoặc giá trị đơn hàng chưa đạt điều kiện để sử
-                        dụng</p>
+                    <p class="reward-subtext">Bạn không có điểm thưởng hoặc giá trị đơn hàng chưa đạt điều kiện để sử dụng</p>
                 </div>
 
                 <div class="calc-final-section">
@@ -133,8 +146,7 @@
                     <div class="calc-row"><span>Tổng tiền hàng</span><span>195,000đ</span></div>
                     <div class="calc-row"><span>Phí vận chuyển</span><span>-</span></div>
                     <div class="calc-row total-big"><span>Tổng thanh toán</span><span>195,000đ</span></div>
-                    <div class="calc-row reward-row"><span>Điểm nhận được</span><span><i
-                                class="fa-solid fa-circle-dot"></i> 1 điểm</span></div>
+                    <div class="calc-row reward-row"><span>Điểm nhận được</span><span><i class="fa-solid fa-circle-dot"></i> 1 điểm</span></div>
 
                     <div class="member-info-box">
                         <i class="fa-solid fa-lightbulb"></i>
@@ -144,10 +156,8 @@
                 </div>
             </div>
         </div>
-
-    </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -2481,3 +2481,29 @@ GIAO DIỆN THANH TOÁN (HAI CỘT CÂN BẰNG TUYỆT ĐỐI)
     background-color: #333;
     /* Hiệu ứng khi di chuột vào */
 }
+
+
+
+
+
+/* --- CSS Thông báo lỗi đỏ --- */
+.input-field-group {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-text {
+    color: #ff0000;
+    font-size: 12px;
+    height: 16px; /* Giữ chỗ để không bị nhảy khung khi hiện lỗi */
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.tt-input.input-error {
+    border: 1px solid #ff0000 !important;
+}
+
+
+
