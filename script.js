@@ -4,88 +4,88 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+    const slides = document.querySelectorAll(".slide");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
 
-// nếu trang không có slider thì không chạy
-if(slides.length === 0) return;
+    // nếu trang không có slider thì không chạy
+    if (slides.length === 0) return;
 
-let index = 0;
-
-
-// =====================================
-// HIỂN THỊ SLIDE
-// =====================================
-
-function showSlide(i){
-
-slides.forEach(function(slide){
-slide.classList.remove("active");
-});
-
-slides[i].classList.add("active");
-
-}
+    let index = 0;
 
 
-// =====================================
-// NÚT NEXT
-// =====================================
+    // =====================================
+    // HIỂN THỊ SLIDE
+    // =====================================
 
-if(nextBtn){
+    function showSlide(i) {
 
-nextBtn.addEventListener("click", function(){
+        slides.forEach(function (slide) {
+            slide.classList.remove("active");
+        });
 
-index++;
+        slides[i].classList.add("active");
 
-if(index >= slides.length){
-index = 0;
-}
-
-showSlide(index);
-
-});
-
-}
+    }
 
 
-// =====================================
-// NÚT PREV
-// =====================================
+    // =====================================
+    // NÚT NEXT
+    // =====================================
 
-if(prevBtn){
+    if (nextBtn) {
 
-prevBtn.addEventListener("click", function(){
+        nextBtn.addEventListener("click", function () {
 
-index--;
+            index++;
 
-if(index < 0){
-index = slides.length - 1;
-}
+            if (index >= slides.length) {
+                index = 0;
+            }
 
-showSlide(index);
+            showSlide(index);
 
-});
+        });
 
-}
+    }
 
 
-// =====================================
-// AUTO SLIDE
-// =====================================
+    // =====================================
+    // NÚT PREV
+    // =====================================
 
-setInterval(function(){
+    if (prevBtn) {
 
-index++;
+        prevBtn.addEventListener("click", function () {
 
-if(index >= slides.length){
-index = 0;
-}
+            index--;
 
-showSlide(index);
+            if (index < 0) {
+                index = slides.length - 1;
+            }
 
-},3000);
+            showSlide(index);
+
+        });
+
+    }
+
+
+    // =====================================
+    // AUTO SLIDE
+    // =====================================
+
+    setInterval(function () {
+
+        index++;
+
+        if (index >= slides.length) {
+            index = 0;
+        }
+
+        showSlide(index);
+
+    }, 3000);
 
 
 });
