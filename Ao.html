@@ -7,7 +7,7 @@
     <title>Quần</title>
 
     <link rel="stylesheet" href="CollectionCSS.css">
-
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -15,22 +15,66 @@
 <body>
 
 
-    <!-- TOP BAR -->
+     <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-logo">HGT STORE</div>
 
-    <div class="top-bar">
-        HỆ THỐNG CỬA HÀNG HGT STORE
+            <div class="search-center-group">
+                <div class="search-input-wrapper">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-xmark close-search" id="close-search"></i>
+                </div>
+
+                <div class="search-suggestions">
+                    <span>Gợi ý cho bạn: </span>
+                    <a href="#">QUẦN TÂY</a>,
+                    <a href="#">QUẦN KAKI</a>,
+                    <a href="#">QUẦN JEANS</a>,
+                    <a href="#">QUẦN SHORT</a>
+                </div>
+            </div>
+
+            <div class="search-empty-space"></div>
+        </div>
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+    </div>
 
     <!-- HEADER -->
 
     <header class="header">
 
         <div class="logo">
-            HGT STORE
+            <a href="index.html" style="text-decoration: none; color: inherit;">HGT STORE</a>
         </div>
-
 
         <nav class="menu">
 
@@ -43,15 +87,15 @@
                 <div class="dropdown-menu">
 
                     <a href="donggia195.html">Đồng giá 195K</a>
-                    <a href="#">Mua 1 tặng 1</a>
-                    <a href="#">Deal trải nghiệm</a>
+                    <a href="mua1tang1.html">Mua 1 tặng 1</a>
+                    <a href="dealtrainghiem.html">Deal trải nghiệm</a>
 
                 </div>
 
             </div>
 
             <div class="dropdown">
-                <a href="#">COLLECTION</a>
+                <a href="Collection.htm">COLLECTION</a>
                 <div class="dropdown-menu">
                     <a href="#">Summer Collection</a>
                     <a href="#">Tết Collection</a>
@@ -60,8 +104,12 @@
                 </div>
             </div>
 
+
+
+
             <div class="dropdown">
-                <a href="#">ÁO</a>
+                
+                <a href="Ao.html" class="active">ÁO</a>
                 <div class="dropdown-menu">
                     <a href="#">Mục 1</a>
                     <a href="#">Mục 2</a>
@@ -70,18 +118,13 @@
                 </div>
             </div>
 
-            <div class="dropdown">
-                <a href="#" class="active">QUẦN</a>
-                <div class="dropdown-menu">
-                    <a href="#">Quần Short</a>
-                    <a href="#">Quần Jean</a>
-                    <a href="#">Quần Kaki</a>
-                    <a href="#">Quần Tây</a>
-                </div>
-            </div>
+
+
+
+
 
             <div class="dropdown">
-                <a href="#">PHỤ KIỆN</a>
+                <a href="Quan.htm">QUẦN</a>
                 <div class="dropdown-menu">
                     <a href="#">Mục 1</a>
                     <a href="#">Mục 2</a>
@@ -92,18 +135,34 @@
                 </div>
             </div>
 
-            <a href="New.html">NEW</a>
-            <a href="#">ABOUT</a>
 
+
+
+
+            <div class="dropdown">
+                <a href="Phujkien.htm">PHỤ KIỆN</a>
+                <div class="dropdown-menu">
+                    <a href="#">Mục 1</a>
+                    <a href="#">Mục 2</a>
+                    <a href="#">Mục 3</a>
+                    <a href="#">Mục 4</a>
+                    <a href="#">Mục 5</a>
+                    <a href="#">Mục 6</a>
+                </div>
+            </div>
+
+
+
+
+            <a href="New.html">NEW</a>
+
+            <a href="about.html">ABOUT</a>
         </nav>
 
-
         <div class="icons">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-
+            <i class="fa-solid fa-magnifying-glass" id="open-search" style="cursor: pointer;"></i>
+            <a href="auth.html" style="color: inherit;"><i class="fa-solid fa-user"></i></a>
+            <a href="giohang.html" style="color: inherit;"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
 
     </header>
@@ -603,7 +662,7 @@
 
 
     <script src="CollectionJS.js"></script>
-
+ <script src="script.js"></script>
 </body>
 
 </html>
