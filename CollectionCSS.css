@@ -57,6 +57,7 @@ display:flex;
 gap:25px;
 }
 
+
 .menu a {
     text-decoration: none; /* Bỏ gạch chân mặc định của trình duyệt */
     color: black;          /* Màu chữ */
@@ -856,4 +857,164 @@ color:#777;
 font-size:13px;
 }
 
+.product-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
 
+/* Nút mua ngay */
+.buy-btn{
+    flex: 1;
+    padding: 11px;
+    border: none;
+    background: #e63946;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover nút mua */
+.buy-btn:hover{
+    background: #b71c2b;
+    transform: translateY(-3px);
+}
+
+/* Nút giỏ hàng */
+.cart-btn{
+    width: 48px;
+    border: none;
+    background: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.item{
+    transition: 0.3s;
+    border-radius: 10px;
+    background: white;
+}
+
+/* PHÓNG TO ĐỔ BÓNG */
+.item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.cate-box:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 8px 20px rgba(147, 146, 141, 0.5),
+    0 0 15px rgba(55, 54, 45, 0.4);
+}
+
+.collection-item{
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+    background: white;
+}
+
+/* Ảnh mượt hơn */
+.collection-item img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+/* Hover cả khối */
+.collection-item:hover{
+    transform: scale(1.03);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.2),
+    0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Ảnh zoom nhẹ */
+.collection-item:hover img{
+    transform: scale(1.08);
+}
+.collection-text button{
+    padding: 12px 24px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover nút */
+.collection-text button:hover{
+    transform: translateY(-4px);
+
+    background: gold;
+
+    color: rgb(90, 116, 115);
+
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Phóng to đổ bóng */
+.set-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+    background: white;
+}
+
+/* Ảnh */
+.set-item img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+/* Hover cả item */
+.set-item:hover{
+    transform: scale(1.03);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.2),
+    0 0 15px rgba(255,215,0,0.4);
+}
+
+/* Zoom ảnh */
+.set-item:hover img{
+    transform: scale(1.08);
+}
+
+/* Nút chữ */
+.set-item button{
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover chữ */
+.set-item button:hover{
+    transform: translateY(-4px);
+
+    background: gold;
+
+    color: black;
+
+    box-shadow: 0 8px 20px rgba(255,215,0,0.5);
+}
