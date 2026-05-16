@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <title>COLLECTION</title>
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="CollectionCSS.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,58 +14,11 @@
 
 <body>
 
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-container">
-            <div class="search-logo">HGT STORE</div>
-
-            <div class="search-center-group">
-                <div class="search-input-wrapper">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-xmark close-search" id="close-search"></i>
-                </div>
-
-                <div class="search-suggestions">
-                    <span>Gợi ý cho bạn: </span>
-                    <a href="#">QUẦN TÂY</a>,
-                    <a href="#">QUẦN KAKI</a>,
-                    <a href="#">QUẦN JEANS</a>,
-                    <a href="#">QUẦN SHORT</a>
-                </div>
-            </div>
-
-            <div class="search-empty-space"></div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- TOP BAR -->
 
     <div class="top-bar">
-
+        HỆ THỐNG CỬA HÀNG HGT STORE
     </div>
 
 
@@ -75,7 +28,7 @@
     <header class="header">
 
         <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: inherit;">HGT STORE</a>
+            HGT STORE
         </div>
 
 
@@ -90,14 +43,12 @@
                 <div class="dropdown-menu">
 
                     <a href="donggia195.html">Đồng giá 195K</a>
-                    <a href="mua1tang1.html">Mua 1 tặng 1</a>
-                    <a href="dealtrainghiem.html">Deal trải nghiệm</a>
+                    <a href="#">Mua 1 tặng 1</a>
+                    <a href="#">Deal trải nghiệm</a>
 
                 </div>
 
             </div>
-
-
 
             <div class="dropdown">
                 <a href="Collection.htm" class="active">COLLECTION</a>
@@ -109,9 +60,6 @@
                 </div>
             </div>
 
-
-
-
             <div class="dropdown">
                 <a href="Ao.html">ÁO</a>
                 <div class="dropdown-menu">
@@ -121,11 +69,6 @@
                     <a href="#">Áo khoác</a>
                 </div>
             </div>
-
-
-
-
-
 
             <div class="dropdown">
                 <a href="Quan.htm">QUẦN</a>
@@ -147,135 +90,495 @@
                 </div>
             </div>
 
-
-
-
-
             <a href="New.html">NEW</a>
-            <a href="about.html">ABOUT</a>
+            <a href="#">ABOUT</a>
 
         </nav>
 
 
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="open-search" style="cursor: pointer;"></i>
-            <a href="auth.html" style="color: inherit;"><i class="fa-solid fa-user"></i></a>
-            <a href="giohang.html" style="color: inherit;"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+
         </div>
 
     </header>
 
 
 
-    <!-- Collection  -->
+    <!-- BANNER SLIDER -->
 
-    <section class="sale">
+    <section class="banner">
 
-        <h1 class="sale-title">COLLECTION</h1>
+        <div class="slider">
 
+            <img src="image/TET/tet1.jpg" class="slide active">
+            <img src="image/TRAVEL/tra1.jpg" class="slide">
+            <img src="image/TRAVEL/tra2.jpg" class="slide">
 
-        <div class="sale-container">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
 
+        </div>
 
-            <!-- CARD 1 -->
-
-            <a href="donggia195.html" class="sale-card">
-
-                <img src="images/s1.jpg">
-
-                <div class="sale-content">
-
-                    <h3>Summer Collection</h3>
-
-                    <p>
-                        Hàng trăm sản phẩm áo, polo, hoodie đang được đồng giá cực sốc chỉ 195K.
-                    </p>
-
-                    <span class="sale-btn">XEM NGAY</span>
-
-                </div>
-
-            </a>
+    </section>
 
 
 
-            <!-- CARD 2 -->
+    <!-- DANH MỤC NỔI BẬT -->
 
-            <a href="mua1tang1.html" class="sale-card">
+    <section class="category">
 
-                <img src="images/t1.jpg">
+        <h2>Danh mục nổi bật</h2>
 
-                <div class="sale-content">
+        <div class="category-container">
 
-                    <h3>Tết Collection</h3>
+            <div class="category-item">
+                <img src="image/AOHE/HE1.jpg">
+            </div>
 
-                    <p>
-                        Áp dụng cho nhiều sản phẩm áo thun và áo polo trong thời gian khuyến mãi.
-                    </p>
+            <div class="category-item">
+                <img src="image/TET/tet2.jpg">
+            </div>
 
-                    <span class="sale-btn">XEM NGAY</span>
+        </div>
 
-                </div>
-
-            </a>
+    </section>
 
 
+    <section class="deal">
 
-            <!-- CARD 3 -->
+        <h2>Summer Collection</h2>
 
-            <a href="dealtrainghiem.html" class="sale-card">
+        <div class="product-list">
 
-                <img src="images/t2.jpg">
+            <div class="product">
 
-                <div class="sale-content">
+                <img src="image/AOHE/HE3.jpg">
 
-                    <h3>Travellers Selection</h3>
+                <h3>Áo thun</h3>
 
-                    <p>
-                        Giảm giá đặc biệt khi mua combo sản phẩm trong bộ sưu tập mới.
-                    </p>
+                <p class="price">505.000đ</p>
 
-                    <span class="sale-btn">XEM NGAY</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
 
                 </div>
-
-            </a>
-
-
-
-
-            <!-- CARD 4 -->
-
-        <a href="#" class="sale-card">
-
-            <img src="images/t4.jpg">
-
-            <div class="sale-content">
-
-                <h3>Coming Soon</h3>
-
-                <p>
-                    Giảm giá đặc biệt khi mua combo sản phẩm trong bộ sưu tập mới.
-                </p>
-
-                <span class="sale-btn">XEM NGAY</span>
 
             </div>
 
-        </a>
+            <div class="product">
+
+                <img src="image/AOHE/HE4.jpg">
+
+                <h3>Áo Polo</h3>
+
+                <p class="price">365.000đ</p>
+
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <img src="image/AOHE/HE5.jpg">
+
+                <h3>Quần bãi biển</h3>
+
+                <p class="price">500.000đ</p>
+
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <img src="image/AOHE/HE2.jpg">
+
+                <h3>Áo sơ mi</h3>
+
+                <p class="price">305.000đ</p>
+
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btn">XEM THÊM BỘ SƯU TẬP HÈ</button>
+
+    </section>
+
+
+
+    <!-- NEW ARRIVAL -->
+
+    <section class="new-arrival">
+
+        <h2>NEW ARRIVAL</h2>
+
+        <div class="new-grid">
+
+            <div class="item">
+                <img src="image/TET/tet10.jpg">
+                <p>Áo dài cổ cao </p>
+                <span>450.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TET/tet2.jpg">
+                <p>Áo phông may mắn</p>
+                <span>540.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TET/tet3.jpg">
+                <p>Vest quý ông</p>
+                <span>530.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TET/tet4.jpg">
+                <p>Áo thun nam</p>
+                <span>270.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TET/tet6.jpg">
+                <p>Áo dài tay rộng</p>
+                <span>965.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="image/TRAVEL/tra3.jpg">
+                <p>Áo bò</p>
+                <span>450.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TRAVEL/tra4.jpg">
+                <p>Quần đùi thun đen</p>
+                <span>540.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TRAVEL/tra5.jpg">
+                <p>Áo sơ mi nam</p>
+                <span>530.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TRAVEL/tra7.jpg">
+                <p>Quần kaki sáng</p>
+                <span>270.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/TRAVEL/tra8.jpg">
+                <p>Áo khoác sơ mi</p>
+                <span>265.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="image/AOHE/HE6.jpg">
+                <p>Áo phông có cổ</p>
+                <span>450.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Áo/ao (19).webp">
+                <p>Quần jeans nam</p>
+                <span>540.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Áo/ao (25).webp">
+                <p>Áo dây rút</p>
+                <span>530.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Áo/ao (15).webp">
+                <p>Áo thun nam</p>
+                <span>270.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Áo/ao (24).webp">
+                <p>Áo thun phong cách</p>
+                <span>265.000đ</span>
+                <div class="product-buttons">
+
+                    <a href="muahang.html" class="buy-btn">
+                        Mua ngay
+                    </a>
+
+                    <a href="giohang.html" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
 
         </div>
 
 
-
-
-
-
-
-
-
+        <div class="more-btn">
+            <button>XEM TẤT CẢ</button>
+        </div>
 
     </section>
+
+
+    <!-- SET ĐỒ NỔI BẬT -->
+
+    <section class="featured-set">
+
+        <h2>Tất cả</h2>
+
+        <div class="set-container">
+
+            <div class="set-item">
+                <img src="image/TET/tet1.jpg">
+
+                <button>Tết Collection</button>
+            </div>
+
+            <div class="set-item">
+                <img src="image/AOHE/HE2.jpg">
+                <button>Summer Collection</button>
+            </div>
+
+            <div class="set-item">
+                <img src="image/TRAVEL/tra1.jpg">
+                <button>Travellers Selection</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BANNER COLLECTION -->
+
+    <section class="collection-banner">
+        <div class="collection-item">
+            <img src="image/AOHE/HE2.jpg">
+
+            <div class="collection-text">
+                <h2>KHÁM PHÁ BỘ SƯU TẬP MỚI</h2>
+                <button>KHÁM PHÁ NGAY</button>
+            </div>
+
+        </div>
+
+
+        <div class="collection-item">
+            <img src="image/TRAVEL/tra5.jpg">
+
+            <div class="collection-text">
+                <h2>TIN THỜI TRANG</h2>
+                <button>KHÁM PHÁ NGAY</button>
+            </div>
+
+        </div>
+
+    </section>
+
 
 
 
@@ -287,7 +590,7 @@
 
             <div class="feature">
                 <i class="fa-solid fa-truck"></i>
-                <p>Miễn phí vận chuyển<br><span>Miễn phí đơn hàng từ 1.000k</span></p>
+                <p>Miễn phí vận chuyển<br><span>Miễn phí đơn từ 1.000k</span></p>
             </div>
 
             <div class="feature">
@@ -316,7 +619,7 @@
                 <h3>Về HGT</h3>
 
                 <p>
-                    HGT Store - Thương hiệu thời trang nam Bigsize với phong cách trẻ trung.
+                    HGT Store - Thương hiệu thời trang nam phong cách trẻ trung.
                 </p>
 
                 <div class="social">
@@ -331,7 +634,7 @@
 
             <div class="footer-col">
 
-                <h3>Liên hệ hợp tác</h3>
+                <h3>Liên hệ</h3>
 
                 <p>Địa chỉ: Hoàng Quốc Việt</p>
                 <p>Điện thoại: 0936 611 611</p>
@@ -343,7 +646,7 @@
 
             <div class="footer-col">
 
-                <h3>Hỗ trợ khách hàng</h3>
+                <h3>Hỗ trợ</h3>
 
                 <ul>
                     <li>Giới thiệu</li>
@@ -375,24 +678,8 @@
     </footer>
 
 
+    <script src="CollectionJS.js"></script>
 
-
-
-
-    <div class="vibrate-contact-btn">
-        <a href="tel:0936611611" title="Gọi ngay cho HGT Store">
-            <div class="icon-box">
-                <i class="fa-solid fa-comment-dots"></i>
-            </div>
-            <span>Liên hệ</span>
-        </a>
-    </div>
-
-
-
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>
