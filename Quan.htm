@@ -4,75 +4,33 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>HGT STORE</title>
+    <title>Quần</title>
 
     <link rel="stylesheet" href="CollectionCSS.css">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-container">
-            <div class="search-logo">HGT STORE</div>
-
-            <div class="search-center-group">
-                <div class="search-input-wrapper">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-xmark close-search" id="close-search"></i>
-                </div>
-
-                <div class="search-suggestions">
-                    <span>Gợi ý cho bạn: </span>
-                    <a href="#">QUẦN TÂY</a>,
-                    <a href="#">QUẦN KAKI</a>,
-                    <a href="#">QUẦN JEANS</a>,
-                    <a href="#">QUẦN SHORT</a>
-                </div>
-            </div>
-
-            <div class="search-empty-space"></div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- TOP BAR -->
 
     <div class="top-bar">
-
+        HỆ THỐNG CỬA HÀNG HGT STORE
     </div>
+
+
 
     <!-- HEADER -->
 
     <header class="header">
 
         <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: inherit;">HGT STORE</a>
+            HGT STORE
         </div>
+
 
         <nav class="menu">
 
@@ -85,8 +43,8 @@
                 <div class="dropdown-menu">
 
                     <a href="donggia195.html">Đồng giá 195K</a>
-                    <a href="mua1tang1.html">Mua 1 tặng 1</a>
-                    <a href="dealtrainghiem.html">Deal trải nghiệm</a>
+                    <a href="#">Mua 1 tặng 1</a>
+                    <a href="#">Deal trải nghiệm</a>
 
                 </div>
 
@@ -102,9 +60,8 @@
                 </div>
             </div>
 
-
             <div class="dropdown">
-                <a href="Ao.html">ÁO</a>
+                <a href="Ao.htm" >ÁO</a>
                 <div class="dropdown-menu">
                     <a href="#">Áo thun</a>
                     <a href="#">Áo Polo</a>
@@ -114,7 +71,7 @@
             </div>
 
             <div class="dropdown">
-                <a href="Quan.htm">QUẦN</a>
+                <a href="Quan.htm" class="active">QUẦN</a>
                 <div class="dropdown-menu">
                     <a href="#">Quần Short</a>
                     <a href="#">Quần Jean</a>
@@ -133,49 +90,33 @@
                 </div>
             </div>
 
-
-
-
-
-            <div class="dropdown">
-                <a href="Phujkien.htm">PHỤ KIỆN</a>
-                <div class="dropdown-menu">
-                    <a href="#">Mục 1</a>
-                    <a href="#">Mục 2</a>
-                    <a href="#">Mục 3</a>
-                    <a href="#">Mục 4</a>
-                    <a href="#">Mục 5</a>
-                    <a href="#">Mục 6</a>
-                </div>
-            </div>
-
-
-
-
             <a href="New.html">NEW</a>
+            <a href="#">ABOUT</a>
 
-            <a href="about.html">ABOUT</a>
         </nav>
 
+
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="open-search" style="cursor: pointer;"></i>
-            <a href="auth.html" style="color: inherit;"><i class="fa-solid fa-user"></i></a>
-            <a href="giohang.html" style="color: inherit;"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+
         </div>
 
     </header>
 
 
 
-    <!-- BANNER SLIDER -->
+     <!-- BANNER SLIDER -->
 
     <section class="banner">
 
         <div class="slider">
 
-            <img src="image/TET/tet1.jpg" class="slide active">
-            <img src="image/TRAVEL/tra1.jpg" class="slide">
-            <img src="image/TRAVEL/tra2.jpg" class="slide">
+            <img src="image/Quần/Banner/b4.jpg" class="slide active">
+            <img src="image/Quần/Banner/b5.jpg" class="slide">
+            <img src="image/Quần/Banner/b6.jpg" class="slide">
 
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
@@ -184,167 +125,341 @@
 
     </section>
 
+   <!-- BANNER COLLECTION -->
 
+    <section class="collection-banner">
 
-    <!-- DANH MỤC NỔI BẬT -->
+        <div class="collection-item">
+            <img src="image/Quần/Jean/j1.jpg">
 
-    <section class="category">
-
-        <h2>Danh mục nổi bật</h2>
-
-        <div class="category-container">
-
-            <div class="category-item">
-                <img src="image/AOHE/HE1.jpg">
+            <div class="collection-text">
+                <h2>QUẦN JEANS THỜI THƯỢNG</h2>
+                <button>KHÁM PHÁ NGAY</button>
             </div>
 
-            <div class="category-item">
-                <img src="image/TET/tet2.jpg">
+        </div>
+
+
+        <div class="collection-item">
+            <img src="image/Quần/Kaki/k6.jpg">
+
+            <div class="collection-text">
+                <h2>QUẦN KAKI HIỆN ĐẠI</h2>
+                <button>KHÁM PHÁ NGAY</button>
             </div>
 
         </div>
 
     </section>
-
-
-    <section class="deal">
-
-        <h2>Summer Collection</h2>
-
-        <div class="product-list">
-
-            <div class="product">
-                <img src="image/AOHE/HE2.jpg">
-                <h3>Áo sơ mi</h3>
-                <p class="price">305.000đ</p>
-            </div>
-
-            <div class="product">
-                <img src="image/AOHE/HE3.jpg">
-                <h3>Áo phông</h3>
-                <p class="price">305.000đ</p>
-            </div>
-
-            <div class="product">
-                <img src="image/AOHE/HE4.jpg">
-                <h3>Quần đùi</h3>
-                <p class="price">305.000đ</p>
-            </div>
-
-            <div class="product">
-                <img src="image/AOHE/HE5.jpg">
-                <h3>Áo phông cổ bó sát</h3>
-                <p class="price">540.000đ</p>
-            </div>
-
-        </div>
-
-        <button class="btn">XEM THÊM BỘ SƯU TẬP HÈ</button>
-
-    </section>
-
-
-
-    <!-- NEW ARRIVAL -->
 
     <section class="new-arrival">
 
-        <h2>NEW ARRIVAL</h2>
+        <h2>Tất cả sản phẩm</h2>
 
         <div class="new-grid">
 
             <div class="item">
-                <img src="image/TET/tet10.jpg">
-                <p>Áo dài cổ cao </p>
+                <img src="image/Quần/Jean/j1.jpg">
+
+                <p>Quần Jean xanh</p>
+
                 <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/TET/tet2.jpg">
-                <p>Áo phông may mắn</p>
-                <span>540.000đ</span>
+                <img src="image/Quần/Kaki/k1.jpg">
+
+                <p>Quần Kaki xám</p>
+
+                <span>400.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+            
+
+            <div class="item">
+                <img src="image/Quần/Tây/t1.jpg">
+
+                <p>Quần Tây nâu</p>
+
+                <span>650.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+            
+
+            <div class="item">
+                <img src="image/Quần/Short/s1.jpg">
+
+                <p>Quần Short be</p>
+
+                <span>220.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/TET/tet3.jpg">
-                <p>Vest quý ông</p>
-                <span>530.000đ</span>
-            </div>
+                <img src="image/Quần/Jean/j2.jpg">
 
-            <div class="item">
-                <img src="image/TET/tet4.jpg">
-                <p>Áo thun nam</p>
-                <span>270.000đ</span>
-            </div>
+                <p>Quần Jean màu đậm</p>
 
-            <div class="item">
-                <img src="image/TET/tet6.jpg">
-                <p>Áo dài tay rộng</p>
-                <span>965.000đ</span>
-            </div>
-
-
-            <div class="item">
-                <img src="image/TRAVEL/tra3.jpg">
-                <p>Áo bò</p>
                 <span>450.000đ</span>
-            </div>
 
-            <div class="item">
-                <img src="image/TRAVEL/tra4.jpg">
-                <p>Quần đùi thun đen</p>
-                <span>540.000đ</span>
-            </div>
+                <div class="product-buttons">
 
-            <div class="item">
-                <img src="image/TRAVEL/tra5.jpg">
-                <p>Áo sơ mi nam</p>
-                <span>530.000đ</span>
-            </div>
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
 
-            <div class="item">
-                <img src="image/TRAVEL/tra7.jpg">
-                <p>Quần kaki sáng</p>
-                <span>270.000đ</span>
-            </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
 
-            <div class="item">
-                <img src="image/TRAVEL/tra8.jpg">
-                <p>Áo khoác sơ mi</p>
-                <span>265.000đ</span>
+                </div>
             </div>
 
 
             <div class="item">
-                <img src="image/AOHE/HE6.jpg">
-                <p>Áo phông có cổ</p>
+                <img src="image/Quần/Kaki/k2.jpg">
+
+                <p>Quần Kaki trắng</p>
+
                 <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/Quần/Short/s2.jpg">
+
+                <p>Quần Short thể thao</p>
+
+                <span>350.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/Áo/ao (19).webp">
-                <p>Quần jeans nam</p>
-                <span>540.000đ</span>
+                <img src="image/Quần/Tây/t2.jpg">
+
+                <p>Quần Tây xám</p>
+
+                <span>950.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/Áo/ao (25).webp">
-                <p>Áo dây rút</p>
-                <span>530.000đ</span>
+                <img src="image/Quần/Jean/j3.jpg">
+
+                <p>Quần Jean ống rộng</p>
+
+                <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/Áo/ao (15).webp">
-                <p>Áo thun nam</p>
-                <span>270.000đ</span>
+                <img src="image/Quần/Kaki/k3.jpg">
+
+                <p>Quần Kaki ống rộng</p>
+
+                <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="image/Quần/Short/s3.jpg">
+
+                <p>Quần Short cao</p>
+
+                <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
             <div class="item">
-                <img src="image/Áo/ao (24).webp">
-                <p>Áo thun phong cách</p>
-                <span>265.000đ</span>
+                <img src="image/Quần/Tây/t3.jpg">
+
+                <p>Quần Tây thùng</p>
+
+                <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
             </div>
 
+            <div class="item">
+                <img src="image/Quần/Kaki/k6.jpg">
+
+                <p>Quần Kaki thanh</p>
+
+                <span>850.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Quần/Short/s6.jpg">
+
+                <p>Quần Short body</p>
+
+                <span>450.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/Quần/Tây/t6.jpg">
+
+                <p>Tây đẳng cấp</p>
+
+                <span>2.950.000đ</span>
+
+                <div class="product-buttons">
+
+                    <button class="buy-btn">
+                        Mua ngay
+                    </button>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </div>
+            </div>
         </div>
 
 
@@ -355,63 +470,38 @@
     </section>
 
 
-    <!-- SET ĐỒ NỔI BẬT -->
 
-    <section class="featured-set">
+    <!-- DANH MỤC SẢN PHẨM -->
 
-        <h2>Tất cả</h2>
+    <section class="product-category">
 
-        <div class="set-container">
+        <h2>DANH MỤC SẢN PHẨM</h2>
 
-            <div class="set-item">
-                <img src="image/TET/tet1.jpg">
-                <p>TẾT</p>
-                <button>Tết Collection</button>
+        <div class="category-grid">
+
+            <div class="cate-box">
+                <img src="image/Quần/Jean/j5.jpg">
+                <p>JEANS</p>
             </div>
 
-            <div class="set-item">
-                <img src="image/AOHE/HE2.jpg">
-                <p>CHÀO HÈ</p>
-                <button>Summer Collection</button>
+            <div class="cate-box">
+                <img src="image/Quần/Kaki/k5.jpg">
+                <p>KAKI</p>
             </div>
 
-            <div class="set-item">
-                <img src="image/TRAVEL/tra1.jpg">
-                <p>DU LỊCH</p>
-                <button>Travellers Selection</button>
+            <div class="cate-box">
+                <img src="image/Quần/Short/s5.jpg">
+                <p>SHORT</p>
             </div>
 
-        </div>
-
-    </section>
-
-    <!-- BANNER COLLECTION -->
-
-    <section class="collection-banner">
-        <div class="collection-item">
-            <img src="image/AOHE/HE2.jpg">
-
-            <div class="collection-text">
-                <h2>KHÁM PHÁ BỘ SƯU TẬP MỚI</h2>
-                <button>KHÁM PHÁ NGAY</button>
-            </div>
-
-        </div>
-
-
-        <div class="collection-item">
-            <img src="image/TRAVEL/tra5.jpg">
-
-            <div class="collection-text">
-                <h2>TIN THỜI TRANG</h2>
-                <button>KHÁM PHÁ NGAY</button>
+            <div class="cate-box">
+                <img src="image/Quần/Tây/t5.png">
+                <p>TÂY</p>
             </div>
 
         </div>
 
     </section>
-
-
 
 
     <!-- FOOTER -->
@@ -511,7 +601,7 @@
 
 
     <script src="CollectionJS.js"></script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
